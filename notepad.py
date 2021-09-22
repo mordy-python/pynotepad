@@ -1,19 +1,14 @@
 import PySimpleGUI as psg
 
-menu_layout = [
-    ['Help',['View Help', 'Send Feedack', 'About Notepad']]
-]
+menu_def = [['&File', ['&Open     Ctrl-O', '&Save       Ctrl-S', '&Properties', 'E&xit']],
+                ['&Edit', ['&Paste', ['Special', 'Normal', ], 'Undo'], ],
+                ['&Toolbar', ['---', 'Command &1', 'Command &2',
+                              '---', 'Command &3', 'Command &4']],
+                ['&Help', '&About...'], ]
 
 app_layout = [
-    [
-        psg.Menu(
-            [
-                [menu_layout],
-                ["Help", ["About"]],
-            ]
-        )
-    ],
-    [psg.Multiline(size=(125, 35))],
+    [psg.Menu(menu_def)],
+    [psg.Multiline()]
 ]
 
 window = psg.Window("PyNotepad", layout=app_layout, resizable=True)
