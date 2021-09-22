@@ -7,3 +7,8 @@ while True:
         break
 
 window.close
+app_layout = [
+    [psg.Menu(['File', 'Help'])]
+]
+
+window = psg.Window('PyNotepad', layout=app_layout)
