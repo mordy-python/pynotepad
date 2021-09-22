@@ -1,7 +1,7 @@
 import PySimpleGUI as psg
 
 menu_def = [
-    ["&File", ["&Open     Ctrl-O", "&Save       Ctrl-S", "E&xit"]],
+    ["&File", ["&New File     Ctrl+N", "&Open     Ctrl-O", "&Save       Ctrl-S", "E&xit"]],
 ]
 
 app_layout = [[psg.Menu(menu_def)], [psg.Multiline()]]
@@ -13,5 +13,9 @@ while True:
 
     if event == None:
         break
+    elif event == 'Open':
+            filename = sg.popup_get_file('file to open', no_window=True)
+            print(filename)
+
 
 window.close()
