@@ -14,7 +14,7 @@ while True:
     if event == None:
         break
     elif event == 'Open':
-            filename = sg.popup_get_file('file to open', no_window=True)
+            filename = psg.popup_get_file('file to open', no_window=True)
             print(filename)
 
 
