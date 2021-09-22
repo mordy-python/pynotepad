@@ -1,7 +1,9 @@
 import PySimpleGUI as psg
 
 menu_def = [
-    ["&File", ["&New File     Ctrl+N", "&Open     Ctrl-O", "&Save       Ctrl-S", "E&xit"]],
+    ["&File", ["&Open     Ctrl-O", "&Save       Ctrl-S", "E&xit"]],
+# ['Help[View Help, Send Feedback, About Notepad]']
+    ["Help", ["View Help", "Send Feedback", "About Notepad"]]
 ]
 
 app_layout = [[psg.Menu(menu_def)], [psg.Multiline()]]
