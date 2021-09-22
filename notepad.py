@@ -7,7 +7,6 @@ app_layout = [
 
 window = psg.Window('PyNotepad', layout=app_layout, resizable=True)
 
-window = psg.Window('PyNotepad', layout=app_layout)
 while True:
     event,values=window.read()
 
