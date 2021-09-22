@@ -1,12 +1,14 @@
 import PySimpleGUI as psg
 
-menu_layout = []
+menu_layout = [
+    ['Help',['View Help', 'Send Feedack', 'About Notepad']]
+]
 
 app_layout = [
     [
         psg.Menu(
             [
-                [menu_layout]
+                [menu_layout],
                 ["Help", ["About"]],
             ]
         )
