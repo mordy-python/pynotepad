@@ -1,3 +1,2 @@
-import time
+import PySimpleGUI as psg
 
-print(time.time())
